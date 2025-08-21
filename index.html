@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detektor Objek AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🔍 Detektor Objek AI</h1>
+        <p>Unggah gambar, dan AI akan menandai semua objek yang dikenali.</p>
+        
+        <div class="image-container">
+            <img id="gambar-preview" src="#" alt="Preview Gambar Anda" class="hidden">
+            <canvas id="canvas-overlay"></canvas>
+        </div>
+        
+        <input type="file" id="input-gambar" accept="image/*">
+        
+        <div id="status">
+            <p>Menunggu gambar...</p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"></script>
+    <script src="script.js"></script>
+</body>
+</html>
